@@ -10,4 +10,5 @@ export class AppComponent {
   evenNumbers = [2, 4];
   onlyOdd = false;
   onlyEven = false;
+  value = 5;
 }

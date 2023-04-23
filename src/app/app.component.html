@@ -21,7 +21,13 @@
         </div>
         
       </ul>
-      <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style</p>
+      <p appBetterHighlight>Style</p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">Value is 5</p>
+        <p *ngSwitchCase="10">Value is 10</p>
+        <p *ngSwitchDefault>Value is default</p>
+
+      </div>
       
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
